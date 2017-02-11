@@ -20,8 +20,10 @@ Dim commandStr(10), k
 Dim commandFileName
 Dim pptFileName
 
-ipAddess        = "172.16.168.71"
-portNo          = 5001
+'ipAddess        = "172.16.168.71"
+'portNo          = 5001
+ipAddess        = "127.0.0.1"
+portNo          = 4000
 commandFileName = "presenTxt.txt"
 pptFileName     = "Sample.pptx"
 
@@ -239,7 +241,7 @@ Function encodeStr(Byval pStrUni, Byval pCharSet)
 End Function
 
 '===========================================================
-' 文字コード変換
+' カレントパスを取得
 '===========================================================
 Function getCurPath()
 	Dim wFileObj
